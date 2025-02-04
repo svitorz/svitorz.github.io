@@ -4,4 +4,5 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue(), tailwindcss()],
+  base: process.env.NODE_ENV === "production" ? "/svitorz.github.io/" : "/",
 });
