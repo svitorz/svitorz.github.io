@@ -8,7 +8,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(), // Usa o modo de histórico do navegador
+  history: createWebHistory("/svitorz.github.io/"), // Usa o modo de histórico do navegador
   routes,
 });
 
