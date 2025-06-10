@@ -7,7 +7,7 @@ const isMenuOpen = ref(false);
 </script>
 
 <template>
-  <nav class="bg-white dark:bg-gray-900 shadow-md relative">
+  <nav class="shadow-md relative">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
         <div class="flex-shrink-0">
@@ -26,24 +26,22 @@ const isMenuOpen = ref(false);
 
         <div class="hidden md:block">
           <div class="ml-10 flex items-baseline space-x-4">
-            <router-link
-              to="/"
-              class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700"
+            <router-link to="/" class="px-3 py-2 rounded-md text-sm font-medium"
               >Home</router-link
             >
             <router-link
               to="/about"
-              class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700"
+              class="px-3 py-2 rounded-md text-sm font-medium"
               >About</router-link
             >
             <router-link
               to="/projects"
-              class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700"
+              class="px-3 py-2 rounded-md text-sm font-medium"
               >Projects</router-link
             >
             <router-link
               to="/contact"
-              class="px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700"
+              class="px-3 py-2 rounded-md text-sm font-medium"
               >Contact</router-link
             >
           </div>
@@ -58,7 +56,7 @@ const isMenuOpen = ref(false);
           <button
             @click="isMenuOpen = !isMenuOpen"
             type="button"
-            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
           >
             <span class="sr-only">Open main menu</span>
             <svg
@@ -103,25 +101,25 @@ const isMenuOpen = ref(false);
         <router-link
           @click="isMenuOpen = false"
           to="/"
-          class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200 dark:hover:bg-gray-700"
+          class="block px-3 py-2 rounded-md text-base font-medium"
           >Home</router-link
         >
         <router-link
           @click="isMenuOpen = false"
           to="/about"
-          class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200 dark:hover:bg-gray-700"
+          class="block px-3 py-2 rounded-md text-base font-medium"
           >About</router-link
         >
         <router-link
           @click="isMenuOpen = false"
           to="/projects"
-          class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200 dark:hover:bg-gray-700"
+          class="block px-3 py-2 rounded-md text-base font-medium"
           >Projects</router-link
         >
         <router-link
           @click="isMenuOpen = false"
           to="/contact"
-          class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200 dark:hover:bg-gray-700"
+          class="block px-3 py-2 rounded-md text-base font-medium"
           >Contact</router-link
         >
       </div>
