@@ -10,7 +10,9 @@
         developer based in
         <span class="font-semibold">Cosmorama, São Paulo</span>. I currently
         work at
-        <a href="lumiun.com" class="font-semibold hover:text-lack-blue"
+        <a
+          href="https://www.lumiun.com"
+          class="font-semibold hover:text-lack-blue"
           >Lumiun</a
         >, crafting scalable solutions and intuitive interfaces.
       </p>
