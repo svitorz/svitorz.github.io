@@ -13,8 +13,10 @@
         <a
           href="https://www.lumiun.com"
           target="_blank"
+          rel="noopener noreferrer"
           class="font-semibold hover:text-lack-blue"
-          >Lumiun</a
+        >
+          Lumiun </a
         >, crafting scalable solutions and intuitive interfaces.
       </p>
 
