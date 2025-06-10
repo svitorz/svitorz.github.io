@@ -5,7 +5,7 @@ import path from "path";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [vue(), tailwindcss()],
-  base: "/svitorz.dev/",
+  base: "/svitorz.github.io/",
   resolve: {
     alias: {
       // sempre use path.resolve para evitar problemas de path
