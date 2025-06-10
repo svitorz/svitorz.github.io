@@ -12,6 +12,7 @@
         work at
         <a
           href="https://www.lumiun.com"
+          target="_blank"
           class="font-semibold hover:text-lack-blue"
           >Lumiun</a
         >, crafting scalable solutions and intuitive interfaces.
