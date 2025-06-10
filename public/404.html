@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <script>
+      // Guarda a rota que o usuário tentou acessar (ex: /projetos)
+      const path = window.location.pathname;
+
+      // Armazena essa rota na sessionStorage para que a página principal possa lê-la
+      sessionStorage.redirect = path;
+
+      // Redireciona imediatamente para a raiz do seu site
+      window.location.href = "/";
+    </script>
+  </head>
+  <body></body>
+</html>
