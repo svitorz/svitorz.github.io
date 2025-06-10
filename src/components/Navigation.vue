@@ -1,27 +1,23 @@
 <script setup>
-const linkClasses =
-  "hover:bg-stone-300  dark:hover:text-stone-200 dark:hover:bg-stone-700 rounded-2xl p-2 text-lg px-3";
+import ThemeToggle from "./ThemeToggle.vue";
 </script>
 <template>
-  <nav>
-    <div class="flex justify-center items-center py-5">
-      <ul class="bg-stone-100 dark:bg-stone-900 p-3 rounded-2xl">
-        <li>
-          <router-link
-            to="/"
-            :class="linkClasses"
-            activeClass="text-sky-500 dark:text-sky-700"
-            >home</router-link
-          >
-          |
-          <router-link
-            to="/about"
-            :class="linkClasses"
-            activeClass="text-sky-500 dark:text-sky-700"
-            >about</router-link
-          >
-        </li>
-      </ul>
+  <nav class="flex items-center justify-between px-6 py-4">
+    <router-link
+      to="/"
+      class="text-xl font-bold flex items-center justify-center px-2"
+    >
+      <img src="/icon.svg" class="w-5 h-5 dark:invert" alt="Elephant Icon" />
+      svitorz
+    </router-link>
+    <div class="space-x-4">
+      <router-link to="/" class="hover:underline">Home</router-link>
+      <router-link to="/about" class="hover:underline">Sobre</router-link>
+      <router-link to="/projects" class="hover:underline">Projetos</router-link>
+      <router-link to="/contact" class="hover:underline">Contato</router-link>
+    </div>
+    <div class="float-end">
+      <ThemeToggle />
     </div>
   </nav>
 </template>

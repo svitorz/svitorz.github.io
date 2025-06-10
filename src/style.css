@@ -1,8 +1,22 @@
-@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
 
-html,
-body,
-* {
-  font-family: "Jetbrains Mono", serif;
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-lack-primary: #0a0a0a;
+  --color-lack-black: #080808;
+  --color-lack-red: #d70000;
+  --color-lack-green: #789978;
+  --color-lack-yellow: #ffaa88;
+  --color-lack-blue: #7788aa;
+  --color-lack-magenta: #d7007d;
+  --color-lack-cyan: #708090;
+  --color-lack-white: #deeeed;
+  --font-jetbrains: "JetBrains Mono", "sans-serif";
+}
+
+.invert {
+  filter: invert(100%);
 }
