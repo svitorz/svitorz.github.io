@@ -12,9 +12,9 @@ import ThemeToggle from "./ThemeToggle.vue";
     </router-link>
     <div class="space-x-4">
       <router-link to="/" class="hover:underline">Home</router-link>
-      <router-link to="/about" class="hover:underline">Sobre</router-link>
-      <router-link to="/projects" class="hover:underline">Projetos</router-link>
-      <router-link to="/contact" class="hover:underline">Contato</router-link>
+      <router-link to="/about" class="hover:underline">about</router-link>
+      <router-link to="/projects" class="hover:underline">Projects</router-link>
+      <router-link to="/contact" class="hover:underline">Contact</router-link>
     </div>
     <div class="float-end">
       <ThemeToggle />
