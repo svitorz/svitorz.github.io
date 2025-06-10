@@ -26,22 +26,24 @@ const isMenuOpen = ref(false);
 
         <div class="hidden md:block">
           <div class="ml-10 flex items-baseline space-x-4">
-            <router-link to="/" class="px-3 py-2 rounded-md text-sm font-medium"
+            <router-link
+              to="/"
+              class="px-3 py-2 rounded-md text-sm font-medium hover:underline"
               >Home</router-link
             >
             <router-link
               to="/about"
-              class="px-3 py-2 rounded-md text-sm font-medium"
+              class="px-3 py-2 rounded-md text-sm font-medium hover:underline"
               >About</router-link
             >
             <router-link
               to="/projects"
-              class="px-3 py-2 rounded-md text-sm font-medium"
+              class="px-3 py-2 rounded-md text-sm font-medium hover:underline"
               >Projects</router-link
             >
             <router-link
               to="/contact"
-              class="px-3 py-2 rounded-md text-sm font-medium"
+              class="px-3 py-2 rounded-md text-sm font-medium hover:underline"
               >Contact</router-link
             >
           </div>
@@ -101,25 +103,25 @@ const isMenuOpen = ref(false);
         <router-link
           @click="isMenuOpen = false"
           to="/"
-          class="block px-3 py-2 rounded-md text-base font-medium"
+          class="block px-3 py-2 rounded-md text-base font-medium hover:underline"
           >Home</router-link
         >
         <router-link
           @click="isMenuOpen = false"
           to="/about"
-          class="block px-3 py-2 rounded-md text-base font-medium"
+          class="block px-3 py-2 rounded-md text-base font-medium hover:underline"
           >About</router-link
         >
         <router-link
           @click="isMenuOpen = false"
           to="/projects"
-          class="block px-3 py-2 rounded-md text-base font-medium"
+          class="block px-3 py-2 rounded-md text-base font-medium hover:underline"
           >Projects</router-link
         >
         <router-link
           @click="isMenuOpen = false"
           to="/contact"
-          class="block px-3 py-2 rounded-md text-base font-medium"
+          class="block px-3 py-2 rounded-md text-base font-medium hover:underline"
           >Contact</router-link
         >
       </div>

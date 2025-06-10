@@ -6,10 +6,18 @@ const toggleDark = useToggle(isDark);
 </script>
 <template>
   <div class="flex items-center justify-center">
-    <button @click="toggleDark()">
-      <Transition>
-        <img rel="icon" src="/moon.svg" class="w-5 h-5" v-if="!isDark" />
-        <img rel="icon" src="/sun.svg" class="w-5 h-5 invert" v-else />
+    <button
+      @click="toggleDark()"
+      class="relative w-8 h-8 flex items-center justify-center"
+    >
+      <Transition mode="out-in">
+        <img
+          rel="icon"
+          src="/moon.svg"
+          class="absolute w-5 h-5"
+          v-if="!isDark"
+        />
+        <img rel="icon" src="/sun.svg" class="absolute w-5 h-5 invert" v-else />
       </Transition>
     </button>
   </div>

@@ -39,14 +39,6 @@ import StyledButton from "../components/Buttons/StyledButton.vue";
             LinkedIn
           </a>
           <a
-            href="https://twitter.com/svitorz"
-            target="_blank"
-            rel="noopener"
-            class="hover:text-lack-cyan"
-          >
-            Twitter
-          </a>
-          <a
             href="https://instagram.com/svitorz"
             target="_blank"
             rel="noopener"

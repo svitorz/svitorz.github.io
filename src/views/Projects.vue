@@ -101,7 +101,7 @@ const pinnedRepos = [
   {
     name: "meeting faces",
     description: "Trabalho de Conclusão de Curso - 2024 ",
-    url: "https://github.com/dotfiles/meetingfaces",
+    url: "https://github.com/svitorz/meetingfaces",
     image: "/meetingfaces.png",
     stars: 80,
     forks: 10,
