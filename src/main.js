@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 
-import routes from "./routes/index.js";
+import router from "./routes/index.js";
 
 import "./style.css";
 
@@ -14,4 +14,4 @@ if (redirectPath) {
   router.push(redirectPath);
 }
 
-createApp(App).use(routes).mount("#app");
+createApp(App).use(router).mount("#app");
